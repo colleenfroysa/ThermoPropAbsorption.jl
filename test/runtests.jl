@@ -1,6 +1,9 @@
 using ThermoPropAbsorption
 using Test
 
-@testset "ThermoPropAbsorption.jl" begin
-    # Write your tests here.
-end
+include("test_types.jl")
+include("test_properties.jl")
+
+# @testset "ThermoPropAbsorption.jl" begin
+#     # Write your tests here.
+# end
