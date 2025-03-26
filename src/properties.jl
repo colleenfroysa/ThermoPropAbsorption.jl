@@ -97,5 +97,5 @@ function η_deviation_star(viscosity_deviation_star_model::ViscosityDeviationSta
 end
 
 function η_loaded(x_CO₂::T,η_star::T, η_unloaded::T) where T <: Number 
-    return exp(x_CO₂ * log(η_star) + (1.0 - x_CO₂) * log(η_unloaded)) * 1e3  # Convert Pa·s to mPa·s
+    return exp(x_CO₂ * log(η_star) + (1.0 - x_CO₂) * log(η_unloaded))
 end
